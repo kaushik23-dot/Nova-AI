@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>document.documentElement.classList.add('js');</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Nova — Websites & AI short-form video · Selwyn & Christchurch, NZ</title>
+  <meta name="description" content="Nova builds fast, hand-crafted websites for local businesses and AI-generated short-form video ads for online brands. Based in Rolleston, Selwyn, New Zealand." />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nova — Websites & AI short-form video" />
+  <meta property="og:description" content="Your business, at full brightness. Hand-built websites and AI short-form video from Rolleston, NZ." />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta property="og:locale" content="en_NZ" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts: preconnect then load with display=swap -->
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@400,500,700&f[]=zodiak@400,401,501&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================= HEADER ============================= -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Nova — home">Nova<span class="brand__dot">.</span></a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <span class="nav__toggle-bar"></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a class="nav__link" href="index.html" aria-current="page">Home</a></li>
+          <li><a class="nav__link" href="websites.html">Websites</a></li>
+          <li><a class="nav__link" href="videos.html">Videos</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+          <li class="nav__cta"><a class="btn btn--primary" href="contact.html">Start a project <span class="btn__arrow" aria-hidden="true">→</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================= HERO + THE SPLIT ============================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="eyebrow hero__eyebrow">Web &amp; AI video studio · 43.59°S 172.38°E</p>
+
+        <!-- THE ORRERY: Nova is the star; both services orbit it, endlessly.
+             Hover (or focus) a body to pause its orbit — each links to its page. -->
+        <div class="orrery" role="group" aria-label="Nova — websites and short-form video in orbit">
+          <span class="orrery__ring orrery__ring--web" aria-hidden="true"></span>
+          <span class="orrery__ring orrery__ring--vid" aria-hidden="true"></span>
+
+          <div class="orrery__orbit orrery__orbit--web">
+            <a class="orrery__body" href="websites.html">
+              <span class="orrery__planet orrery__planet--web" aria-hidden="true"></span>Websites
+            </a>
+          </div>
+          <div class="orrery__orbit orrery__orbit--vid">
+            <a class="orrery__body" href="videos.html">
+              <span class="orrery__planet orrery__planet--vid" aria-hidden="true"></span>Videos
+            </a>
+          </div>
+
+          <div class="orrery__core">
+            <span class="orrery__spark" aria-hidden="true"></span>
+            <h1 class="orrery__wordmark" id="hero-title">Nova<span class="hero__dot">.</span></h1>
+          </div>
+        </div>
+
+        <p class="hero__motto">Your business, at <em>full brightness.</em></p>
+      </div>
+
+      <!-- THE FORK -->
+      <div class="container fork" id="fork" aria-label="Choose a service">
+        <a class="panel panel--web" href="websites.html">
+          <div class="panel__head">
+            <span class="panel__index mono">Path 01 — Local</span>
+            <span class="panel__arrow" aria-hidden="true">→</span>
+          </div>
+          <div>
+            <h2 class="panel__title">Web<span>sites.</span></h2>
+            <p class="panel__desc">Fast, hand-built sites for independent businesses in Selwyn &amp; Christchurch. Launch in weeks, cared for every month.</p>
+            <div class="panel__meta">
+              <span class="mono">One-off build</span>
+              <span class="mono">+ monthly care</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="panel panel--vid" href="videos.html">
+          <div class="panel__head">
+            <span class="panel__index mono">Path 02 — Scale</span>
+            <span class="panel__arrow" aria-hidden="true">→</span>
+          </div>
+          <div>
+            <h2 class="panel__title">Short-form <span>video.</span></h2>
+            <p class="panel__desc">AI-generated ads for online brands that live on social — hook-driven UGC and cinematic product films, at volume.</p>
+            <div class="panel__meta">
+              <span class="mono">Packs</span>
+              <span class="mono">+ monthly retainers</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================= STATUS TICKER ============================= -->
+    <div class="ticker">
+      <div class="container ticker__inner">
+        <span class="ticker__item"><b>Status</b> Booking new projects</span>
+        <span class="ticker__item"><b>Base</b> Rolleston · Selwyn · NZ</span>
+        <span class="ticker__item"><b>Replies</b> Within one working day</span>
+        <span class="ticker__item"><b>Focus</b> Websites &amp; short-form video</span>
+      </div>
+    </div>
+
+    <!-- ============================= WHY NOVA ============================= -->
+    <section class="section" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow--ion">Why Nova</p>
+          <h2 class="section-head__title" id="why-title">Studio-grade output, <em>without</em> the studio overheads.</h2>
+        </div>
+        <ul class="proofs">
+          <li class="proof reveal">
+            <span class="proof__label mono">01 — Method</span>
+            <h3 class="proof__title">AI-accelerated</h3>
+            <p class="proof__text">Modern AI tooling does the heavy lifting, so you get more, faster — without cutting the craft.</p>
+          </li>
+          <li class="proof reveal" data-delay="1">
+            <span class="proof__label mono">02 — Local</span>
+            <h3 class="proof__title">NZ-based &amp; personal</h3>
+            <p class="proof__text">A real person in Rolleston who picks up the phone — not an offshore ticket queue.</p>
+          </li>
+          <li class="proof reveal" data-delay="2">
+            <span class="proof__label mono">03 — Speed</span>
+            <h3 class="proof__title">Fast turnaround</h3>
+            <p class="proof__text">Sites live in weeks, video packs in days. Momentum you can actually feel.</p>
+          </li>
+          <li class="proof reveal" data-delay="3">
+            <span class="proof__label mono">04 — Care</span>
+            <h3 class="proof__title">Looked after</h3>
+            <p class="proof__text">Ongoing care plans keep your site healthy and your content pipeline full.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================= MANIFESTO ============================= -->
+    <section class="section section--tight manifesto" aria-label="What Nova believes">
+      <div class="container container--narrow reveal">
+        <p>Every business has a <em>brighter version</em> of itself. My job is to build it.</p>
+      </div>
+    </section>
+
+    <!-- ============================= SELECTED WORK ============================= -->
+    <section class="section section--flush-top" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow--flare">Selected work</p>
+          <h2 class="section-head__title" id="work-title">A mix of local builds and <em>brand video.</em></h2>
+          <p class="section-head__intro">A snapshot across both paths. Full showcases live on each service page.</p>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card work-card--web reveal">
+            <a class="work-card__link" href="websites.html">
+              <div class="work-card__thumb">
+                <span class="work-card__index mono">W—01</span>
+                <span class="work-card__type mono">Website</span>
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Smoke Rolleston <span class="work-card__go" aria-hidden="true">→</span></h3>
+                <p class="work-card__desc">A warm, appetite-first site for a local BBQ &amp; smokehouse — menu, story, and bookings.</p>
+                <ul class="work-card__tags"><li class="tag">Hospitality</li><li class="tag">Web design</li><li class="tag">Local</li></ul>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card work-card--video reveal" data-delay="1">
+            <a class="work-card__link" href="videos.html">
+              <div class="work-card__thumb">
+                <span class="work-card__index mono">V—01</span>
+                <span class="work-card__type mono">Video</span>
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Fuller Food Co. <span class="work-card__go" aria-hidden="true">→</span></h3>
+                <p class="work-card__desc">Hook-driven UGC-style ads built for paid social testing — many variations, fast.</p>
+                <ul class="work-card__tags"><li class="tag">DTC food</li><li class="tag">UGC ads</li><li class="tag">Paid social</li></ul>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card work-card--web reveal" data-delay="2">
+            <a class="work-card__link" href="websites.html">
+              <div class="work-card__thumb">
+                <span class="work-card__index mono">W—02</span>
+                <span class="work-card__type mono">Website</span>
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">ManukaRx <span class="work-card__go" aria-hidden="true">→</span></h3>
+                <p class="work-card__desc">A clean, credible storefront for a natural skincare brand rooted in East Cape mānuka.</p>
+                <ul class="work-card__tags"><li class="tag">Wellness</li><li class="tag">E-commerce</li><li class="tag">Brand</li></ul>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card work-card--video reveal" data-delay="3">
+            <a class="work-card__link" href="videos.html">
+              <div class="work-card__thumb">
+                <span class="work-card__index mono">V—02</span>
+                <span class="work-card__type mono">Video</span>
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Sweet Fuel <span class="work-card__go" aria-hidden="true">→</span></h3>
+                <p class="work-card__desc">Cinematic product films that make a functional snack feel premium and craveable.</p>
+                <ul class="work-card__tags"><li class="tag">Food &amp; bev</li><li class="tag">Cinematic</li><li class="tag">Product film</li></ul>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= CLOSING CTA ============================= -->
+    <section class="section section--flush-top">
+      <div class="container">
+        <div class="cta reveal">
+          <p class="eyebrow" style="justify-content:center;">Start a project</p>
+          <h2 class="cta__title">Let's build the thing your business <em>deserves.</em></h2>
+          <p class="cta__text">Tell me what you're working on and where you want it to go. Within a day you'll have a clear, honest plan — and someone genuinely excited to build it with you.</p>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--lg" href="contact.html">Start a project <span class="btn__arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost btn--lg" href="about.html">Meet Nova</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">Nova<span class="brand__dot">.</span></a>
+        <p class="footer__tag">Your business, at full brightness.</p>
+        <span class="footer__coord mono">Rolleston, Selwyn · New Zealand</span>
+      </div>
+      <div>
+        <p class="footer__col-title">Explore</p>
+        <ul class="footer__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="websites.html">Websites</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Start here</p>
+        <ul class="footer__list">
+          <li><a href="contact.html">Start a project</a></li>
+          <li><a href="mailto:hello@nova.nz">hello@nova.nz</a></li>
+          <li><a href="tel:+6421000000">+64 21 000 000</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span data-year>2026</span> Nova. All rights reserved.</span>
+      <span class="mono">Built in Selwyn, New Zealand</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

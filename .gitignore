@@ -1,0 +1,7 @@
+# Local preview helper (not needed for deployment)
+.claude/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log

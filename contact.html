@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>document.documentElement.classList.add('js');</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact — Nova · Start a website or video project</title>
+  <meta name="description" content="Start a project with Nova. Email, call, book a time, or send the form — web design for local businesses and AI short-form video for online brands. Rolleston, NZ." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact — Nova" />
+  <meta property="og:description" content="Tell me what you're working on and I'll come back with a clear, honest plan." />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta property="og:locale" content="en_NZ" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@400,500,700&f[]=zodiak@400,401,501&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================= HEADER ============================= -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Nova — home">Nova<span class="brand__dot">.</span></a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <span class="nav__toggle-bar"></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="websites.html">Websites</a></li>
+          <li><a class="nav__link" href="videos.html">Videos</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="contact.html" aria-current="page">Contact</a></li>
+          <li class="nav__cta"><a class="btn btn--primary" href="#form">Start a project <span class="btn__arrow" aria-hidden="true">→</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================= PAGE HERO ============================= -->
+    <section class="page-hero section--tight">
+      <div class="page-hero__glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero__inner page-hero__inner--wide">
+          <p class="eyebrow reveal">Contact</p>
+          <h1 class="page-hero__title page-hero__title--display reveal" data-delay="1">Let's <em>talk.</em></h1>
+        </div>
+        <p class="page-hero__lead reveal" data-delay="2">Tell me a little about your business and what you're after. Pick whatever's easiest — form, email, phone or a booked call — and I'll get back to you within one working day.</p>
+      </div>
+    </section>
+
+    <!-- ============================= CONTACT LAYOUT ============================= -->
+    <section class="section section--tight" aria-labelledby="ways-title">
+      <div class="container">
+        <h2 class="sr-only" id="ways-title">Ways to get in touch</h2>
+        <div class="contact-layout">
+
+          <!-- LEFT: methods -->
+          <div>
+            <p class="eyebrow eyebrow--ion reveal" style="margin-bottom:1.5rem;">Ways to reach me</p>
+            <div class="contact-methods">
+              <a class="contact-method reveal" href="mailto:hello@nova.nz">
+                <span class="contact-method__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                </span>
+                <span><span class="contact-method__label">Email</span><span class="contact-method__value">hello@nova.nz</span></span>
+              </a>
+
+              <a class="contact-method reveal" data-delay="1" href="tel:+6421000000">
+                <span class="contact-method__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-3 2a12 12 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2Z"/></svg>
+                </span>
+                <span><span class="contact-method__label">Phone</span><span class="contact-method__value">+64 21 000 000</span></span>
+              </a>
+
+              <a class="contact-method reveal" data-delay="2" href="https://calendly.com/nova" target="_blank" rel="noopener">
+                <span class="contact-method__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/><path d="m9 15 2 2 4-4"/></svg>
+                </span>
+                <span><span class="contact-method__label">Book a call</span><span class="contact-method__value">Grab a time on Calendly</span></span>
+              </a>
+            </div>
+
+            <div class="reveal" data-delay="2" style="margin-top:2rem;border-top:1px solid var(--line);padding-top:1.5rem;">
+              <p class="mono" style="margin-bottom:0.5rem;">Based in</p>
+              <p>Rolleston, Selwyn — serving Christchurch &amp; Aotearoa. <br>Video clients welcome anywhere online.</p>
+            </div>
+          </div>
+
+          <!-- RIGHT: form -->
+          <div id="form">
+            <!--
+              ============================================================
+              FORM SETUP — pick ONE, both are backend-free & static-friendly:
+
+              A) FORMSPREE (default below)
+                 1. Create a form at https://formspree.io
+                 2. Replace "your-form-id" in the action URL.
+
+              B) NETLIFY FORMS (if deploying to Netlify)
+                 1. Add   netlify   to the <form> tag  ->  <form ... netlify>
+                 2. Add a hidden input:  <input type="hidden" name="form-name" value="contact">
+                 3. Remove the Formspree action URL.
+
+              C) NO BACKEND (mailto fallback)
+                 Replace the whole <form> with a big button:
+                 <a class="btn btn--primary btn--lg" href="mailto:hello@nova.nz">Email me instead</a>
+              ============================================================
+            -->
+            <form class="form reveal" data-delay="1" action="https://formspree.io/f/your-form-id" method="POST">
+              <div class="field field--row">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required />
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" autocomplete="email" placeholder="you@business.co.nz" required />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="business">Business</label>
+                <input type="text" id="business" name="business" placeholder="Business or brand name" />
+              </div>
+
+              <div class="field">
+                <label for="service">What do you need?</label>
+                <select id="service" name="service">
+                  <option value="website">A website</option>
+                  <option value="video">Short-form video</option>
+                  <option value="both">Both</option>
+                  <option value="unsure">Not sure yet</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message">Tell me about it</label>
+                <textarea id="message" name="message" placeholder="A sentence or two about your business and what you're hoping to do." required></textarea>
+              </div>
+
+              <button class="btn btn--primary btn--lg form__submit" type="submit">Send it through <span class="btn__arrow" aria-hidden="true">→</span></button>
+              <p class="form__hint">Prefer email? <a class="link" href="mailto:hello@nova.nz">hello@nova.nz</a> — I reply within one working day.</p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">Nova<span class="brand__dot">.</span></a>
+        <p class="footer__tag">Your business, at full brightness.</p>
+        <span class="footer__coord mono">Rolleston, Selwyn · New Zealand</span>
+      </div>
+      <div>
+        <p class="footer__col-title">Explore</p>
+        <ul class="footer__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="websites.html">Websites</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Start here</p>
+        <ul class="footer__list">
+          <li><a href="#form">Start a project</a></li>
+          <li><a href="mailto:hello@nova.nz">hello@nova.nz</a></li>
+          <li><a href="tel:+6421000000">+64 21 000 000</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span data-year>2026</span> Nova. All rights reserved.</span>
+      <span class="mono">Built in Selwyn, New Zealand</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
