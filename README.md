@@ -133,8 +133,8 @@ The form on `contact.html` is backend-free. Pick one (instructions are also in a
 Search the project for each and swap in your real details.
 
 **Contact details** (appear in the footer of every page + `contact.html`):
-- [ ] `hello@nova.nz` → your real email
-- [ ] `+64 21 000 000` and `tel:+6421000000` → your real phone
+- [x] Email — real (`Kaushikstunz2309@gmail.com`)
+- [x] Phone — set to 029 020 56974 (`tel:+642902056974`) — **verify the number before deploy** (also flagged in HTML comments)
 - [ ] `https://calendly.com/nova` → your real booking link (or remove that method)
 
 **Form:**
@@ -167,3 +167,5 @@ Search the project for each and swap in your real details.
 - **Motto:** "Your business, at full brightness." (hero + every footer).
 - **Accessibility & motion:** all non-essential animation is disabled under `prefers-reduced-motion`, there's a skip-to-content link, visible keyboard focus, and semantic headings throughout.
 - **Fonts:** Clash Display + Satoshi + Zodiak (via Fontshare) and JetBrains Mono (via Google Fonts), all loaded with `font-display: swap` and preconnect. Zodiak supplies the serif-italic emphasis words inside headlines — wrap a word in `<em>` inside any heading to get the effect.
+- **Space backdrop (home hero):** real Hubble eXtreme Deep Field astrophotography in `assets/space/` (`xdf.webp` ~152KB + `xdf.jpg` fallback). Public domain — NASA/ESA/HUDF09 team, NASA ID `GSFC_20171208_Archive_e001651`. Two sparse procedural star layers drift above it at subliminal speed; all motion stops under `prefers-reduced-motion`.
+- **Neon accents:** the three brand accents are the neon system — ion `#45E1FF` (primary), flare `#FF63AE` (secondary), bridge `#7C4DFF` (tertiary/CTAs) — with glow shadow tokens (`--glow-ion` etc.) in the same `:root` block. Adjust hue/intensity there; everything re-points.

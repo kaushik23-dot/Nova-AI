@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Nova">
-  <rect width="64" height="64" rx="14" fill="#0B0A14"/>
+  <rect width="64" height="64" rx="14" fill="#07060F"/>
   <!-- plasma cross-beams (the split) -->
   <g stroke-linecap="round" fill="none" stroke-width="3">
-    <path d="M32 14 L32 50" stroke="#8A5BFF" opacity="0.55"/>
-    <path d="M18 24 L46 40" stroke="#3DDCFF" opacity="0.7"/>
-    <path d="M46 24 L18 40" stroke="#FF5FA2" opacity="0.7"/>
+    <path d="M32 14 L32 50" stroke="#7C4DFF" opacity="0.55"/>
+    <path d="M18 24 L46 40" stroke="#45E1FF" opacity="0.7"/>
+    <path d="M46 24 L18 40" stroke="#FF63AE" opacity="0.7"/>
   </g>
   <!-- ignition point -->
   <circle cx="32" cy="32" r="6" fill="#F4F3FB"/>
