@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>document.documentElement.classList.add('js');</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Book a meeting — Nova · Free 30-minute consult</title>
+  <meta name="description" content="Book a free 30-minute consult with Kaushik at Nova — face to face in Rolleston or online. Websites and AI short-form video for NZ businesses." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Book a meeting — Nova" />
+  <meta property="og:description" content="Pick a time that suits you — face to face in Rolleston or an online video call." />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta property="og:locale" content="en_NZ" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@400,500,700&f[]=zodiak@400,401,501&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================= HEADER ============================= -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Nova — home">Nova<span class="brand__dot">.</span></a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <span class="nav__toggle-bar"></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="websites.html">Websites</a></li>
+          <li><a class="nav__link" href="videos.html">Videos</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+          <li class="nav__cta"><a class="btn btn--primary" href="contact.html">Start a project <span class="btn__arrow" aria-hidden="true">→</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================= PAGE HERO ============================= -->
+    <section class="page-hero section--tight">
+      <div class="page-hero__glow" aria-hidden="true"></div>
+      <div class="container">
+        <p class="eyebrow reveal">Book a meeting</p>
+        <h1 class="page-hero__title page-hero__title--display reveal" data-delay="1">Pick a <em>time.</em></h1>
+        <p class="page-hero__lead reveal" data-delay="2">Thirty minutes, free, no obligation — face to face in Rolleston or an online video call. Tell me where your business is headed and I'll tell you honestly how I'd get you there.</p>
+      </div>
+    </section>
+
+    <!-- ============================= BOOKING FLOW ============================= -->
+    <section class="section section--tight">
+      <div class="container">
+
+        <!-- Shown on production until the backend URL is wired in -->
+        <div class="booking-panel" id="booking-offline" hidden>
+          <div class="booking-panel__spark" aria-hidden="true"></div>
+          <h2 class="booking-panel__title">Booking opens <em>very</em> soon.</h2>
+          <div class="booking-panel__body">
+            <p>The calendar is being switched on right now. In the meantime, email <a class="link" href="mailto:Kaushikstunz2309@gmail.com">Kaushikstunz2309@gmail.com</a> and I'll sort a time with you directly.</p>
+          </div>
+        </div>
+
+        <div class="booking" id="booking-steps">
+
+          <!-- STEP 1 — how we meet -->
+          <div class="bstep">
+            <p class="eyebrow bstep__label">Step 01 — How we meet</p>
+            <div class="choices">
+              <button type="button" class="choice" data-type="Face to Face" aria-pressed="false">
+                <span class="choice__kicker mono">In person</span>
+                <span class="choice__name">Face to Face</span>
+                <span class="choice__meta">38A Finn Ave, Rolleston — coffee's on me.</span>
+              </button>
+              <button type="button" class="choice choice--vid" data-type="Online video call" aria-pressed="false">
+                <span class="choice__kicker mono">From anywhere</span>
+                <span class="choice__name">Online video call</span>
+                <span class="choice__meta">Google Meet link lands in your inbox.</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 2 — pick a time -->
+          <div class="bstep" id="step-time" hidden>
+            <p class="eyebrow bstep__label">Step 02 — Pick a time</p>
+            <div class="cal">
+              <div class="cal__head">
+                <button type="button" class="cal__nav" id="cal-prev" aria-label="Previous month">←</button>
+                <span class="cal__title" id="cal-title">—</span>
+                <button type="button" class="cal__nav" id="cal-next" aria-label="Next month">→</button>
+              </div>
+              <div class="cal__grid" id="cal-grid" aria-label="Choose a date"></div>
+              <div class="slots" id="slots"><span class="slots__empty">Pick a date to see times.</span></div>
+              <p class="slots-hint" id="slots-hint" hidden>All times are New Zealand time · 30-minute meeting.</p>
+            </div>
+          </div>
+
+          <!-- STEP 3 — about you -->
+          <div class="bstep" id="step-details" hidden>
+            <p class="eyebrow bstep__label">Step 03 — About you</p>
+            <div class="pick-summary" id="pick-summary" role="status"></div>
+
+            <form class="form" id="booking-form" novalidate>
+              <div class="field field--row">
+                <div class="field">
+                  <label for="bk-name">Name</label>
+                  <input type="text" id="bk-name" name="name" autocomplete="name" placeholder="Your name" required />
+                  <span class="field__err">Please add your name.</span>
+                </div>
+                <div class="field">
+                  <label for="bk-email">Email</label>
+                  <input type="email" id="bk-email" name="email" autocomplete="email" placeholder="you@business.co.nz" required />
+                  <span class="field__err">That email doesn't look right.</span>
+                </div>
+              </div>
+
+              <div class="field field--row">
+                <div class="field">
+                  <label for="bk-phone">Phone</label>
+                  <input type="tel" id="bk-phone" name="phone" autocomplete="tel" placeholder="02x xxx xxxx" required />
+                  <span class="field__err">That number looks too short.</span>
+                </div>
+                <div class="field">
+                  <label for="bk-service">Service required</label>
+                  <select id="bk-service" name="service" required>
+                    <option value="Website build">Website build</option>
+                    <option value="Website care plan">Website care plan</option>
+                    <option value="Short-form video pack">Short-form video pack</option>
+                    <option value="Monthly video retainer">Monthly video retainer</option>
+                    <option value="Website + video">Website + video</option>
+                    <option value="Not sure yet">Not sure yet</option>
+                  </select>
+                  <span class="field__err">Please pick a service.</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="bk-company">Company name</label>
+                <input type="text" id="bk-company" name="company" autocomplete="organization" placeholder="Your business or brand" required />
+                <span class="field__err">Please add your company name.</span>
+              </div>
+
+              <div class="field">
+                <label for="bk-about">About your company</label>
+                <textarea id="bk-about" name="about" placeholder="What do you do, who are your customers, and what's the goal right now?" required></textarea>
+                <span class="field__err">A sentence or two helps me prepare.</span>
+              </div>
+
+              <div class="booking-error" id="booking-error" hidden></div>
+
+              <button class="btn btn--primary btn--lg form__submit" id="booking-submit" type="submit">Book this time</button>
+              <p class="form__hint">You'll get an instant confirmation email, a reminder the day before, and one 30 minutes out.</p>
+            </form>
+          </div>
+        </div>
+
+        <!-- SUCCESS -->
+        <div class="booking-panel" id="booking-success" hidden>
+          <div class="booking-panel__spark" aria-hidden="true"></div>
+          <h2 class="booking-panel__title">See you <em>soon.</em></h2>
+          <div class="booking-panel__body" id="success-body"></div>
+          <div class="cta__actions" style="justify-content:center;margin-top:2rem;">
+            <a class="btn btn--ghost" href="index.html">Back to home</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">Nova<span class="brand__dot">.</span></a>
+        <p class="footer__tag">Your business, at full brightness.</p>
+        <span class="footer__coord mono">Rolleston, Selwyn · New Zealand</span>
+      </div>
+      <div>
+        <p class="footer__col-title">Explore</p>
+        <ul class="footer__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="websites.html">Websites</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Start here</p>
+        <ul class="footer__list">
+          <li><a href="book.html">Book a meeting</a></li>
+          <li><a href="mailto:Kaushikstunz2309@gmail.com">Kaushikstunz2309@gmail.com</a></li>
+          <li><a href="tel:+642902056974">029 020 56974</a> <!-- verify number before deploy --></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span data-year>2026</span> Nova. All rights reserved.</span>
+      <span class="mono">Built in Selwyn, New Zealand</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/booking.js" defer></script>
+</body>
+</html>
