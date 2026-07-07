@@ -11,7 +11,7 @@
   /* PASTE THE APPS SCRIPT WEB APP URL HERE after deploying the backend.
      While it's empty: localhost runs a mock backend for design/testing,
      and production shows a "booking opens soon" notice instead of the form. */
-  var API_URL = "";
+  var API_URL = "https://script.google.com/macros/s/AKfycbyKcc41_8MrMh7jn673A2_zEp_eScYpFOKs4_wBxAe0koHxhmdZUqwQyOCFM9lFFgpF/exec";
 
   var IS_LOCAL = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
   var MOCK = !API_URL && IS_LOCAL;
