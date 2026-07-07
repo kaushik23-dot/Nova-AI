@@ -323,7 +323,7 @@
       "<p><strong>" + b.type + "</strong><br>" + b.when + " (NZ time)<br>" + whereLabel + "</p>" +
       "<p>" + (b.emailSent
         ? "A confirmation with everything you need is on its way to your inbox (check spam the first time)."
-        : "Your booking is locked in — the confirmation email will follow shortly.") + "</p>";
+        : "Your booking is locked in — I'll be in touch personally to confirm the details.") + "</p>";
     el.success.hidden = false;
     el.success.scrollIntoView({ behavior: "smooth", block: "start" });
   }

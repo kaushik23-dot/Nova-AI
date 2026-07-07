@@ -555,12 +555,16 @@ html:not(.js) .reveal { opacity: 1; transform: none; }
   box-shadow: inset 0 0 60px -26px rgba(255, 99, 174, 0.3);
 }
 
-/* Each orbit is a spinning wrapper; the body counter-rotates to stay upright */
+/* Each orbit is a spinning wrapper; the body counter-rotates to stay upright.
+   pointer-events: none — the wrappers are big invisible circles stacked over
+   each other, so without this the top one swallows clicks meant for the
+   chips (and the inner chip becomes unclickable). The chips re-enable it. */
 .orrery__orbit {
   position: absolute;
   border-radius: 50%;
   transform: rotate(var(--start));
   animation: orbit-spin var(--speed) linear infinite;
+  pointer-events: none;
 }
 .orrery__orbit--web { width: var(--ring-web); height: var(--ring-web); --start: -42deg; --speed: 38s; }
 .orrery__orbit--vid { width: var(--ring-vid); height: var(--ring-vid); --start: 148deg; --speed: 58s; }
@@ -569,6 +573,7 @@ html:not(.js) .reveal { opacity: 1; transform: none; }
 .orrery__orbit:hover, .orrery__orbit:focus-within { animation-play-state: paused; }
 
 .orrery__body {
+  pointer-events: auto; /* the chip itself stays clickable */
   position: absolute;
   top: 0; left: 50%;
   display: inline-flex;
@@ -605,8 +610,9 @@ html:not(.js) .reveal { opacity: 1; transform: none; }
 .orrery__planet--web { background: var(--ion);   box-shadow: 0 0 14px 2px rgba(69, 225, 255, 0.8); }
 .orrery__planet--vid { background: var(--flare); box-shadow: 0 0 14px 2px rgba(255, 99, 174, 0.8); }
 
-/* The star at the centre */
-.orrery__core { position: relative; z-index: 2; display: grid; place-items: center; text-align: center; }
+/* The star at the centre — no links inside, so let clicks pass through
+   to any chip orbiting behind it */
+.orrery__core { position: relative; z-index: 2; display: grid; place-items: center; text-align: center; pointer-events: none; }
 .orrery__spark {
   position: absolute;
   top: -1.6rem; left: 50%;
